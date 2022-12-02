@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <nav class="nav-bar" aria-labelledby="mainmenulabel">
+        <div id="links">
+            <a href="index.html" tabindex="1"><strong>Mark Leonardi</strong></a>
+            <a href="project1.html" tabindex="2">Project 1</a>
+            <a href="project2.html" tabindex="3">Project 2</a>
+            <a href="biography.html" tabindex="4">Biography</a>
+            <a href="resume.pdf" tabindex="5">Resume</a>
+            <a href="contact.html" tabindex="6">Contact</a>
+        </div>
+    </nav>
+    <div class="project">
+        <h1>COVID-19's Impact on the Airline Industry</h1>
+        <p>This project is an interactive visualization displaying the impact of COVID-19 on the amount of daily domestic flights departing each state in the United States.</p>
+        <!--- I know we aren't supposed to have javascript in the hmtl file but this is a prewritten
+        line of code from tableau to import the project so I didn't want to mess with it.-->
+        <div class='tableauPlaceholder' id='viz1669945638615' style='position: relative'><noscript><a href='#'><img alt='Flights and New Cases Per Day - 4&#47;14&#47;2021 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ma&#47;map2_16698784813440&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='map2_16698784813440&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ma&#47;map2_16698784813440&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1669945638615');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='80%';vizElement.style.height=(divElement.offsetWidth*0.55)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';vizElement.parentNode.insertBefore(scriptElement, vizElement); </script>
+        <h2>Methods</h2>
+        <p>This project uses Tableau to visualize two extremely large datasets: every domestic flight across 2020, 2021, and 2022, and a daily update of COVID-19 cases in each state since the beginning of the pandemic.</p>
+        <p>Each state has a colored circle. The size of the circle corresponds with the amount of COVID-19 cases in the given day, and the color of the circle represents the number of domestic flights taking off from that state in the given day. The slider in the top right corner controls the date.</p>
+        <h2>Conclusions</h2>
+        <p>COVID-19 had a massive impact on the airline industry. Most states with strong democratic governors (NY) saw a drastic decrease in flights despite having similar case numbers as other states. California was a unique outlier in this case in that it had a consistent number of flights across the entire dataset. Strong Republican states like Florida and Texas saw lower impact omn flight numbers than other states. In the second wave of COVID in winter 2022, there was almost no shutdown compared to the beginning of the pandemic, despite there being far more daily cases. </p>
+    </div>
+    </body>
+</html>
